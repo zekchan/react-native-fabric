@@ -152,6 +152,7 @@
 					"$(SRCROOT)/../example/ios",
 					"$(SRCROOT)/../../../ios",
 					"$(SRCROOT)/../../../",
+					"$(SRCROOT)/../../../ios/Pods/Crashlytics/iOS",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -170,6 +171,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../example/node_modules/react-native/React/**",
 					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../../ios/Crashlytics/Crashlytics.framework/Headers/",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -208,6 +210,7 @@
 					"$(SRCROOT)/../example/ios",
 					"$(SRCROOT)/../../../ios",
 					"$(SRCROOT)/../../../",
+					"$(SRCROOT)/../../../ios/Pods/Crashlytics/iOS",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -220,6 +223,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../example/node_modules/react-native/React/**",
 					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../../ios/Crashlytics/Crashlytics.framework/Headers/",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -234,14 +238,20 @@
 		D8D9DB8A1C6D03DB009FBC0E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/Crashlytics",
+					"$(SRCROOT)/../../../ios/Crashlytics/Crashlytics.framework/Headers/",
+					"$(SRCROOT)/../../../ios/Pods/Crashlytics/iOS",
+					"$(SRCROOT)/../../../ios/Crashlytics",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../ios/Pods/Headers/Public/Crashlytics",
+					"$(SRCROOT)/../../../ios/Crashlytics/Crashlytics.framework/Headers/",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -252,14 +262,20 @@
 		D8D9DB8B1C6D03DB009FBC0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/Crashlytics",
+					"$(SRCROOT)/../../../ios/Crashlytics/Crashlytics.framework/Headers/",
+					"$(SRCROOT)/../../../ios/Pods/Crashlytics/iOS",
+					"$(SRCROOT)/../../../ios/Crashlytics",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../ios/Pods/Headers/Public/Crashlytics",
+					"$(SRCROOT)/../../../ios/Crashlytics/Crashlytics.framework/Headers/",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
